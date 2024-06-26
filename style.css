@@ -1,0 +1,264 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  background-image: url(khodam.png);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  position: relative;
+}
+
+h1 {
+  color: #333;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+  border-radius: 12px;
+  border: 2px solid #ccc;
+  background-color: rgba(59, 59, 59, 0.5);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  height: 380px;
+}
+
+.container h1 {
+  color: #f0f0f0;
+  font-size: 1.6rem;
+}
+
+.container .header p {
+  font-size: 1rem;
+  margin: 20px 0;
+  padding: 10px 0;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  color: #f0f0f0;
+}
+
+form {
+  display: flex;
+  /* margin-top: 120px; */
+  flex-direction: column;
+  align-items: column;
+}
+
+input[type="text"] {
+  padding: 10px;
+  margin: 10px 0;
+  width: 100%;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.container #refreshButton {
+  margin-top: 20px;
+  background-color: #5a0000;
+}
+
+.container #refreshButton:hover {
+  margin-top: 20px;
+  background-color: #000000;
+}
+
+button:hover {
+  background-color: #2e702f;
+}
+
+.result {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  color: #333;
+  padding: 10px 0;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  background-color: #f0f8ff;
+}
+
+.copyright {
+  position: fixed;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1rem;
+  color: #f0f0f0;
+}
+
+.copyright:hover {
+  cursor: pointer;
+}
+
+/* Animasi Loading */
+.loader {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-top: 4px solid #007bff;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  animation: spin 1s linear infinite;
+  display: none; /* Sembunyikan animasi loading secara default */
+  margin: 0 auto; /* Atur posisi menjadi di tengah */
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 450px) {
+  body {
+    font-family: "Poppins", Arial, sans-serif;
+    background-image: url(bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    position: relative;
+  }
+
+  h1 {
+    color: #333;
+  }
+
+  .container {
+    text-align: center;
+    padding: 20px;
+    border-radius: 12px;
+    border: 2px solid #ccc;
+    background-color: rgba(59, 59, 59, 0.5);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    height: 300px;
+  }
+
+  .container h1 {
+    color: #f0f0f0;
+    font-size: 20px;
+  }
+
+  .container .header p {
+    font-size: 10px;
+    margin: 15px 0;
+    padding: 5px 0;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    color: #f0f0f0;
+  }
+
+  form {
+    display: flex;
+    /* margin-top: 120px; */
+    flex-direction: column;
+    align-items: column;
+  }
+
+  input[type="text"] {
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+  }
+
+  button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .container .refreshButton {
+    margin-top: 20px;
+    background-color: #5a0000;
+  }
+
+  .container .refreshButton:hover {
+    margin-top: 20px;
+    background-color: #000000;
+  }
+
+  button:hover {
+    background-color: #2e702f;
+  }
+
+  .result {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: #333;
+    padding: 10px 0;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background-color: #f0f8ff;
+  }
+
+  .copyright {
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 10px;
+    color: #f0f0f0;
+  }
+
+  .copyright:hover {
+    cursor: pointer;
+  }
+
+  .loader {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-top: 4px solid #007bff;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 1s linear infinite;
+    display: none; /* Sembunyikan animasi loading secara default */
+    margin: 0 auto; /* Atur posisi menjadi di tengah */
+  }
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cek Khodam</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Check Khodam</h1>
+      <div class="header">
+        <p>Cek khodam yang ada di dalam diri Anda</p>
+      </div>
+      <form id="khodamForm">
+        <input
+          type="text"
+          id="nama"
+          placeholder="Masukkan Nama Anda"
+          required
+        />
+        <button type="submit">Cek Khodam</button>
+      </form>
+      <button id="refreshButton" onclick="refreshPage()">Refresh</button>
+      <div class="result" id="result"></div>
+      <div class="loader" id="loader"></div>
+    </div>
+    <div class="copyright">
+      <p>Copyright 2024 | MDA Creative</p>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
