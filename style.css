@@ -2,7 +2,7 @@
 
 body {
   font-family: "Poppins", Arial, sans-serif;
-  background-image: url(khodam.png);
+  background-image: url(bg.png);
   background-size: cover;
   display: flex;
   flex-direction: column;
